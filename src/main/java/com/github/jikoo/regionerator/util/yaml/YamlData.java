@@ -88,10 +88,6 @@ public abstract class YamlData {
 		return this.storage.getStringList(path);
 	}
 
-	<T> @Nullable T getObject(@NotNull String path, @NotNull Class<T> clazz) {
-		return this.storage.getObject(path, clazz);
-	}
-
 	<T extends ConfigurationSerializable> @Nullable T getSerializable(@NotNull String path, @NotNull Class<T> clazz) {
 		return this.storage.getSerializable(path, clazz);
 	}
@@ -102,10 +98,6 @@ public abstract class YamlData {
 
 	@Nullable ItemStack getItemStack(@NotNull String path) {
 		return this.storage.getItemStack(path);
-	}
-
-	@Nullable Location getLocation(@NotNull String path) {
-		return this.storage.getLocation(path);
 	}
 
 	@NotNull FileConfiguration raw() {

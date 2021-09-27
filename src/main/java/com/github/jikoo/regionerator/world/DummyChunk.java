@@ -78,12 +78,22 @@ public class DummyChunk implements Chunk {
 	}
 
 	@Override
+	public long getChunkKey() {
+		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
+	}
+
+	@Override
 	public boolean isLoaded() {
 		return this.world.isChunkLoaded(chunkZ, chunkZ);
 	}
 
 	@Override
 	public boolean load() {
+		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
+	}
+
+	@Override
+	public boolean unload(boolean save, boolean safe) {
 		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
 	}
 
@@ -104,51 +114,6 @@ public class DummyChunk implements Chunk {
 
 	@Override
 	public boolean isSlimeChunk() {
-		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
-	}
-
-	@Override
-	public boolean isForceLoaded() {
-		return this.world.isChunkForceLoaded(this.chunkX, this.chunkZ);
-	}
-
-	@Override
-	public void setForceLoaded(boolean b) {
-		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
-	}
-
-	@Override
-	public boolean addPluginChunkTicket(@NotNull Plugin plugin) {
-		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
-	}
-
-	@Override
-	public boolean removePluginChunkTicket(@NotNull Plugin plugin) {
-		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
-	}
-
-	@Override
-	public @NotNull Collection<Plugin> getPluginChunkTickets() {
-		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
-	}
-
-	@Override
-	public long getInhabitedTime() {
-		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
-	}
-
-	@Override
-	public void setInhabitedTime(long l) {
-		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
-	}
-
-	@Override
-	public boolean contains(@NotNull BlockData blockData) {
-		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
-	}
-
-	@Override
-	public @NotNull PersistentDataContainer getPersistentDataContainer() {
 		throw new UnsupportedOperationException("DummyChunk does not support world operations.");
 	}
 
