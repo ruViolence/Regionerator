@@ -27,7 +27,7 @@ import org.jetbrains.annotations.Nullable;
 public class AnvilWorld extends WorldInfo {
 
 	// r.0.0.mca, r.-1.0.mca, etc.
-	public static final Pattern ANVIL_REGION = Pattern.compile("r\\.(-?\\d+)\\.(-?\\d+)\\.mca");
+	public static final Pattern ANVIL_REGION = Pattern.compile("^r\\.(-?\\d+)\\.(-?\\d+)\\.mca$");
 
 	public AnvilWorld(@NotNull Regionerator plugin, @NotNull World world) {
 		super(plugin, world);
