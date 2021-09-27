@@ -53,61 +53,6 @@
         </exclusion>
       </exclusions>
     </dependency>
-    <dependency>
-      <groupId>br.net.fabiozumbi12.RedProtect</groupId>
-      <artifactId>RedProtect-Core</artifactId>
-      <version>7.7.3</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>br.net.fabiozumbi12.RedProtect</groupId>
-      <artifactId>RedProtect-Spigot</artifactId>
-      <version>7.7.3</version>
-      <scope>provided</scope>
-    </dependency>
-    <!-- JitPack -->
-    <dependency>
-      <groupId>com.github.cjburkey01</groupId>
-      <artifactId>ClaimChunk</artifactId>
-      <version>0.0.22</version>
-      <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>me.clip</groupId>
-          <artifactId>placeholderapi</artifactId>
-        </exclusion>
-      </exclusions> 
-    </dependency>
-    <dependency>
-      <groupId>com.github.angeschossen</groupId>
-      <artifactId>LandsAPI</artifactId>
-      <version>5.13.0</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.github.bloodmc</groupId>
-      <artifactId>GriefDefenderAPI</artifactId>
-      <version>33bd795ad4</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.github.TechFortress</groupId>
-      <artifactId>GriefPrevention</artifactId>
-      <version>16.17.1</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.github.elBukkit</groupId>
-      <artifactId>PreciousStones</artifactId>
-      <version>1.16.5</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.github.TownyAdvanced</groupId>
-      <artifactId>Towny</artifactId>
-      <version>0.97.1.4</version>
-      <scope>provided</scope>
-    </dependency>
   </dependencies>
 
   <repositories>
@@ -122,10 +67,6 @@
     <repository>
       <id>jitpack.io</id>
       <url>https://jitpack.io</url>
-    </repository>
-    <repository>
-      <id>redprotect-repo</id>
-      <url>https://raw.github.com/FabioZumbi12/RedProtect/mvn-repo/</url>
     </repository>
   </repositories>
 
